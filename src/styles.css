@@ -1,0 +1,43 @@
+/* You can add global styles to this file, and also import other style files */
+h3 {
+  color: #369;
+  font-family: Georgia, Helvetica, sans-serif;
+  font-size: 150%;
+}
+p {
+  color: #969;
+  font-family: Georgia, Helvetica, sans-serif;
+  font-size: 150%;
+}
+body {
+  margin: 2em;
+}
+ 
+body, button {
+	color: #269;
+	font-family: Georgia, Helvetica, sans-serif;
+}
+
+/* D3 */
+.links {
+  stroke: #000;
+  stroke-opacity: 0.2;
+}
+
+.polygons {
+  fill: none;
+  stroke: #000;
+}
+
+.polygons :first-child {
+  fill: #f00;
+}
+
+.sites {
+  fill: #000;
+  stroke: #fff;
+}
+
+.sites :first-child {
+  fill: #fff;
+}

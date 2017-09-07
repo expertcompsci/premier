@@ -1,0 +1,20 @@
+<div style="text-align:center">
+  <h1>
+    {{title}}
+  </h1>
+</div>
+<hr>
+<p>Testing scenarios:</p>
+<app-my-tabs-comp (selected)="detail($event.selectedTab)">
+  <app-my-tab-comp [tabText]="'Welcome'" [tabCaption]="'This application hosts examples of to End To End test graphical and form based components.'">
+  </app-my-tab-comp>
+  <app-my-tab-comp tabText="Voronoi Tesselation" [tabCaption]="'A Voronoi diagram is a partitioning of a plane into regions based on distance to points.'">
+    <app-voronoi></app-voronoi>
+  </app-my-tab-comp>
+  <app-my-tab-comp [tabText]="'Graph Drawing'" [tabCaption]="'A drawing of a graph or network diagram is a pictorial representation of the vertices and edges of a graph.'">
+    <app-graph></app-graph>
+  </app-my-tab-comp>
+  <app-my-tab-comp [tabText]="'Forms'" [tabCaption]="'Forms are a class of user interface that allow entering, editing, interaction, validation and submitting data.'">
+  </app-my-tab-comp>
+</app-my-tabs-comp>
+{{detailMsg}}
